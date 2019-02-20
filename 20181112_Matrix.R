@@ -78,7 +78,7 @@ sum(1:10)
 Inf / NaN
 Inf / Inf
 log(Inf)
-Inf + NA이
+Inf + NaN
 
 
 # 선형대수 내적, 외적. (R에서는 외적이 없다. 외적 값=>벡터.)
@@ -155,8 +155,10 @@ mode(x)
 #factor는 mapping 된 결과.
 gender <- c('M','F','M','F','M')
 gender
+class(gender)
 # plot(gender) #문자열
 fgender<- as.factor(gender)
+class(fgender)
 fgender
 fgender[2]
 mode(fgender); class(fgender)
